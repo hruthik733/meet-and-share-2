@@ -1,7 +1,22 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
 }
 
+/* Logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +29,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #003366;  /* Navy Blue */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,12 +37,68 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  border-bottom: 2px solid #ffffff;  /* Add border to separate header */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Light Blue */
 }
 
+.App-header h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.App-header p {
+  color: #b0c4de;  /* Light Gray for description text */
+  font-size: 1.2rem;
+}
+
+/* Button Styling */
+button {
+  background-color: #004a73; /* Darker Navy Blue */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00609f;  /* Lighter Navy Blue */
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+  background-color: #003366; /* Same Navy Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
